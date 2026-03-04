@@ -12,7 +12,7 @@ document.getElementById("permutaForm").addEventListener("submit", async function
     };
 
     try {
-        const response = await fetch("http://localhost:8080/pdf/gerar", {
+        const response = await fetch("/pdf/gerar", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
